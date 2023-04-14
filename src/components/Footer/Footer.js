@@ -4,7 +4,7 @@ import icon1 from '../../assets/social_icons/Group 481771.png'
 
 const Footer = () => {
     return (
-        <div className=' mt-16 px-5 lg:mt-[121.5px] mb-[34.5px] lg:pl-[161px] lg:pr-[109px]'>
+        <div className=' mt-16 px-5 lg:mt-[121.5px] mb-4 lg:mb-[34.5px] lg:pl-[161px] lg:pr-[109px]'>
             <div className='lg:flex justify-between'>
                 <div className='w-full lg:w-2/5 mt-[17px]'>
                     <div className='flex items-center'>

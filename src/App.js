@@ -11,7 +11,7 @@ import BackgroundEffects from './components/BackgroundEffects/BackgroundEffects'
 
 function App() {
   return (
-    <div className=' max-w-[1440px] mx-auto bg-[#00040F] relative'>
+    <div className=' max-w-[1440px] mx-auto bg-[#00040F] relative overflow-hidden'>
       <div className='body'>
         <Header></Header>
         <Banner></Banner>
