@@ -10,7 +10,7 @@ import OurService from './components/OurService/OurService';
 
 function App() {
   return (
-    <div className=' max-w-[1440px] bg-[#00040F] h-[2000px] relative'>
+    <div className=' max-w-[1440px] mx-auto bg-[#00040F] h-[2000px] relative'>
       <div className='body'>
         <Header></Header>
         <Banner></Banner>
