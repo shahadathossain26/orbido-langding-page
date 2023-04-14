@@ -8,13 +8,18 @@ import netflix from '../../assets/payment_icons/netflix.png'
 import manulife from '../../assets/payment_icons/manulife.png'
 import paypal from '../../assets/payment_icons/paypal.png'
 import './Payment.css'
+import { Toaster, toast } from 'react-hot-toast';
 
 const Payment = () => {
+    const handlePayment = () => {
+        toast.success('Great! Your payment is successfull')
+    }
+
     return (
-        <div className='w-full mt-[329px] lg:pl-[141px] pr-[129px] relative'>
-            <div className='flex items-center justify-between'>
-                <div className='w-3/5'>
-                    <div className='last-transaction w-[227px] px-[20px] pt-[20px] pb-[23px] absolute bottom-[220px] left-[350px]  z-30'>
+        <div className='w-full mt-16 lg:mt-[329px] lg:pl-[141px] lg:pr-[129px] relative'>
+            <div className='lg:flex items-center justify-between'>
+                <div className='w-full lg:w-3/5'>
+                    <div className='last-transaction w-[227px] px-[20px] pt-[20px] pb-[23px] lg:absolute mx-auto lg:mx-0 mb-5 lg:mb-0 lg:bottom-[220px] lg:left-[350px]  z-30'>
                         <div className='flex items-center'>
                             <img className='w-[56px] h-[56px] mr-3' src={paypal} alt="" />
                             <div>
@@ -30,10 +35,10 @@ const Payment = () => {
                             </div>
                             <button className='change-btn w-[77.87px] h-[33px] text-[12px] text-white font-[400] opacity-70 px-[10.27px] py-[7px] leading-[160%]'>Change</button>
                         </div>
-                        <button className='gs-btn w-[187.97px] px-[47.25px] py-[7px] text-[#00030d] text-[12px] font-[500] leading-[160%]'>Make Payment</button>
+                        <button onClick={handlePayment} className='gs-btn w-[187.97px] px-[47.25px] py-[7px] text-[#00030d] text-[12px] font-[500] leading-[160%] cursor-pointer'>Make Payment</button>
                     </div>
 
-                    <div className='last-transaction w-[335px] px-[20px] py-[26px]'>
+                    <div className='last-transaction w-[335px] px-[20px] py-[26px] mx-auto lg:mx-0'>
                         <h3 className='text-[22px] font-[600] text-white mb-8'>Last Transaction</h3>
 
                         <div className='flex justify-between mb-5'>
@@ -85,9 +90,9 @@ const Payment = () => {
 
                 </div>
 
-                <div className='w-2/5'>
-                    <h2 className='text-[48px] font-[600] text-white'>Easily control your billing & invoicing.</h2>
-                    <p className='text-[18px] font-[400] text-white opacity-70 mt-6 mb-[48px]'>Elit emnim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttittor integer platea placerat.</p>
+                <div className='w-full lg:w-2/5 px-5 lg:px-0 mt-5 lg:mt-0 text-center lg:text-start'>
+                    <h2 className='text-[28px] lg:text-[48px] font-[600] text-white'>Easily control your billing & invoicing.</h2>
+                    <p className='text-[18px] font-[400] text-white opacity-70 mt-6 mb-5 lg:mb-[48px]'>Elit emnim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttittor integer platea placerat.</p>
                     <div className='flex items-center'>
                         <div className='bg-black px-[10px] py-[7px] mr-[32.14px] rounded-[7px]'>
                             <img src={appStore} alt="appStore" />
@@ -97,6 +102,12 @@ const Payment = () => {
 
                 </div>
             </div>
+            <Toaster
+                containerStyle={{
+                    position: 'fixed',
+                    top: 0
+                }}
+            ></Toaster>
         </div>
     );
 };

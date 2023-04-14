@@ -5,17 +5,17 @@ import logo from '../../assets/logo (1).png'
 const Header = () => {
     return (
         <div>
-            <nav className='leading-[130%] flex justify-between px-[133px] mt-[35px]'>
+            <nav className='leading-[130%] flex justify-between px-5 lg:px-[133px] mt-[35px]'>
                 <div className='flex items-center'>
-                    <img className='logo w-[55px] h-[41px] ' src={logo} alt="" />
-                    <div className='text-[18px] font-[600] flex '><span className='text-white'>OR</span> <span className='text-[#DE9A04]'>BIDO</span></div>
+                    <img className='logo w-[30px] h-[25px] lg:w-[55px] lg:h-[41px] ' src={logo} alt="" />
+                    <div className='text-[14px] lg:text-[18px] font-[600] flex '><span className='text-white'>OR</span> <span className='text-[#DE9A04]'>BIDO</span></div>
                 </div>
 
-                <ul className=' list-none flex'>
-                    <li className='text-[16px] font-[400] text-white  mr-[55px]'>Home</li>
-                    <li className='text-[16px] font-[400] text-white opacity-70  mr-[55px]'>About Us</li>
-                    <li className='text-[16px] font-[400] text-white opacity-70  mr-[55px]'>Features</li>
-                    <li className='text-[16px] font-[400] text-white opacity-70 '>Solution</li>
+                <ul className=' list-none flex items-center'>
+                    <li className='text-[10px] lg:text-[16px] font-[400] text-white  lg:mr-[55px]'>Home</li>
+                    <li className='text-[10px] lg:text-[16px] font-[400] text-white opacity-70  lg:mr-[55px] ml-2 lg:ml-0'>About Us</li>
+                    <li className='text-[10px] lg:text-[16px] font-[400] text-white opacity-70  lg:mr-[55px] ml-2 lg:ml-0'>Features</li>
+                    <li className='text-[10px] lg:text-[16px] font-[400] text-white opacity-70  ml-2 lg:ml-0'>Solution</li>
                 </ul>
 
             </nav>

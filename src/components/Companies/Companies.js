@@ -6,11 +6,11 @@ import dropbox from '../../assets/company_logos/dropbox.png'
 
 const Companies = () => {
     return (
-        <div className='lg:mt-[183px] mx-[187px] flex justify-between items-center'>
-            <img src={airbnb} alt="airbnb" />
-            <img src={binance} alt="binance" />
-            <img src={coinbase} alt="coinbase" />
-            <img src={dropbox} alt="dropbox" />
+        <div className='mt-16 lg:mt-[183px] lg:mx-[187px] lg:flex justify-between items-center'>
+            <img className='mb-8 lg:mb-0 mx-auto lg:mx-0' src={airbnb} alt="airbnb" />
+            <img className='mb-8 lg:mb-0 mx-auto lg:mx-0' src={binance} alt="binance" />
+            <img className='mb-8 lg:mb-0 mx-auto lg:mx-0' src={coinbase} alt="coinbase" />
+            <img className='mb-8 lg:mb-0 mx-auto lg:mx-0' src={dropbox} alt="dropbox" />
         </div>
     );
 };

@@ -1,0 +1,13 @@
+.rectangle-1 {
+    background: linear-gradient(90deg, #1A2980 0%, #26D0CE 100%);
+    filter: blur(325px);
+    border-radius: 200px;
+    transform: rotate(47.46deg);
+}
+
+.rectangle-2 {
+    background: #E88007;
+    filter: blur(450px);
+    border-radius: 200px;
+    transform: rotate(-20.01deg);
+}
